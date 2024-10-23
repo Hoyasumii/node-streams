@@ -9,8 +9,8 @@ function* generateData() {
   for (let index = 0; index < 100; index++) {
     yield {
       id: randomUUID(),
-      name: `Alan-${index}`
-    }
+      name: `Alan-${index}`,
+    };
   }
 }
 
@@ -28,6 +28,5 @@ readable.pipe(process.stdout);
 async function teste() {}
 
 const stream = await teste();
-
 
 // process.stdin.pipe(process.stdout)
